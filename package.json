@@ -1,0 +1,25 @@
+{
+  "name": "jscord",
+  "version": "0.0.1",
+  "description": "A versatile, straightforward node.js library for Discord.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThePoptartCrpr/jscord.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "jscord",
+    "api"
+  ],
+  "author": "ThePoptartCrpr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThePoptartCrpr/jscord/issues"
+  },
+  "homepage": "https://github.com/ThePoptartCrpr/jscord#readme"
+}
