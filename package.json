@@ -1,6 +1,6 @@
 {
   "name": "jscord",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A versatile, straightforward node.js library for Discord.",
   "main": "./src/index.js",
   "scripts": {
