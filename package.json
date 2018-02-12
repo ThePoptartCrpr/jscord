@@ -23,7 +23,10 @@
     "url": "https://github.com/ThePoptartCrpr/jscord/issues"
   },
   "homepage": "https://github.com/ThePoptartCrpr/jscord#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "moment": "^2.20.1"
+  },
   "devDependencies": {
     "eslint": "^4.17.0"
   }

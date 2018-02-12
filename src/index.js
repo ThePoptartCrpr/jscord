@@ -1,3 +1,5 @@
-exports.ree = function() {
-  console.log("ree!");
+const Logger = require('./util/Logger.js');
+
+module.exports = {
+  Logger
 }

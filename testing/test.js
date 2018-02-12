@@ -1,3 +1,10 @@
 const jscord = require('../');
+const Logger = new jscord.Logger();
 
-jscord.ree();
+Logger.log("e" + "asdf");
+
+try {
+  fart.fart;
+} catch(e) {
+  Logger.error(e);
+}
