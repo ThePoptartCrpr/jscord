@@ -1,3 +1,3 @@
 exports.ree = function() {
-  console.log("ree");
+  console.log("ree!");
 }
