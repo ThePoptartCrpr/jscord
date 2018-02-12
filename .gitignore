@@ -1,0 +1,5 @@
+# Directories
+node_modules
+
+# Unwanted files
+npm-debug.log
