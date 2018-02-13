@@ -1,4 +1,9 @@
-<a href="https://discord.gg/Ypmhtc"><img src="https://discordapp.com/api/guilds/412772653481459714/embed.png" alt="Discord server" /></a>
+<div align="center">
+  <br />
+  <p>
+    <a href="https://discord.gg/Ypmhtc"><img src="https://discordapp.com/api/guilds/412772653481459714/embed.png" alt="Discord server" /></a>
+  </p>
+</div>
 
 # jscord
 A versatile, straightforward [node.js](https://nodejs.org) library for Discord.
