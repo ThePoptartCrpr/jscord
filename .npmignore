@@ -1,5 +1,9 @@
 # Directories
-node_modules
+node_modules/
+docgen/
+sitegen/
+testing/
+docs/
 
 # Unwanted files
 .eslintrc.json
