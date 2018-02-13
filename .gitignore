@@ -2,6 +2,8 @@
 node_modules
 sitegen
 docgen
+testing-sensitive
+discordjs-old
 
 # Unwanted files
 npm-debug.log

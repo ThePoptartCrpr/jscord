@@ -3,7 +3,9 @@ node_modules/
 docgen/
 sitegen/
 testing/
+testing-sensitive/
 docs/
+discordjs-old
 
 # Unwanted files
 .eslintrc.json

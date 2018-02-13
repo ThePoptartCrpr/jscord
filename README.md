@@ -13,3 +13,4 @@ A versatile, straightforward [node.js](https://nodejs.org) library for Discord.
 
 ## Links
 * [Documentation](https://jscord.js.org/)
+* [GitHub](https://github.com/ThePoptartCrpr/jscord)
