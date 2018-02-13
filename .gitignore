@@ -5,3 +5,4 @@ docgen
 
 # Unwanted files
 npm-debug.log
+docfiles/doccompile.txt
