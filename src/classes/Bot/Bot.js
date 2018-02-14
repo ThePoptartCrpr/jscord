@@ -7,10 +7,6 @@ const WebSocket = new websocket();
 class Bot {
   /**
    * @param {string} token Your bot account's token
-   * @example
-   * const jscord = require('jscord');
-   * const mybot = new jscord.Bot('token');
-   * mybot.connect();
    */
   constructor(token) {
     this.token = token;

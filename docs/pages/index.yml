@@ -2,3 +2,7 @@
   files:
     - name: Welcome
       path: welcome.md
+- name: Examples
+  files:
+    - name: Connecting
+      path: connecting.js
