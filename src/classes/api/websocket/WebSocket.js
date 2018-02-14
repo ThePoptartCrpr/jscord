@@ -16,6 +16,10 @@ class WebSocket {
       if (a.code === 4004) reject(new Error('Authentication failed, invalid token'));
     }
     ws.onmessage = function(a) {
+      let event = JSON.parse(a.data).t;
+      if (event === 'MESSAGE_CREATE') {
+        console.log(JSON.parse(a.data).d);
+      }
       try {
         var b = JSON.parse(a.data);
         if (0 === b.op) return;
