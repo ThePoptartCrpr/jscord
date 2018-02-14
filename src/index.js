@@ -1,5 +1,5 @@
 const Logger = require('./util/Logger.js');
-const Bot = require('./classes/Bot/Bot.js');
+const Bot = require('./bot/Bot.js');
 
 module.exports = {
   // Utilities
