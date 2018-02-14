@@ -4,9 +4,14 @@ const websocket = require('ws');
 const ws = new websocket("wss://gateway.discord.gg/?encoding=json&v=6");
 
 const Events = require('../../events/Events.js');
-let events = new Events();
+let events;
 
 class WebSocket {
+  constructor(bot) {
+    this.bot = bot;
+    events = new Events(this.bot);
+  }
+  
   connect(token, resolve, reject) {
     let sequence = 0;
     ws.onopen = function() {

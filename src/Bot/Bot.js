@@ -1,15 +1,19 @@
 const websocket = require('../api/websocket/WebSocket.js');
-const WebSocket = new websocket();
+
+const EventEmitter = require('events');
+let WebSocket;
 
 /**
  * This is the core bot object that you will use to connect to just about anything related to Discord.
  */
-class Bot {
+class Bot extends EventEmitter {
   /**
    * @param {string} token Your bot account's token
    */
   constructor(token) {
+    super();
     this.token = token;
+    WebSocket = new websocket(this);
   }
   
   /**
