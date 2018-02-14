@@ -10,11 +10,10 @@ class WebSocket {
       return;
     }
     ws.onerror = function(a) {
-      process.exit(1)
+      reject(new Error(a));
     }
     ws.onclose = function(a) {
-      if (a.code === 4004) reject(new Error('Authentication failed'));
-      process.exit(1)
+      if (a.code === 4004) reject(new Error('Authentication failed, invalid token'));
     }
     ws.onmessage = function(a) {
       try {
@@ -30,13 +29,13 @@ class WebSocket {
             large_threshold: 50
           }
         })), setInterval(function() {
-          ws.send(JSON.stringify({
-            op: 1,
-            d: sequence
-          }))
-        }, b.d.heartbeat_interval))
-      } catch(a) {
-        reject(a);
+            ws.send(JSON.stringify({
+              op: 1,
+              d: sequence
+            }))
+          }, b.d.heartbeat_interval))
+      } catch(e) {
+        reject(e);
       }
     }
   }
