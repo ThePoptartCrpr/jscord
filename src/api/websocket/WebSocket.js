@@ -3,6 +3,9 @@
 const websocket = require('ws');
 const ws = new websocket("wss://gateway.discord.gg/?encoding=json&v=6");
 
+const Events = require('../../events/Events.js');
+let events = new Events();
+
 class WebSocket {
   connect(token, resolve, reject) {
     let sequence = 0;
@@ -16,10 +19,7 @@ class WebSocket {
       if (a.code === 4004) reject(new Error('Authentication failed, invalid token'));
     }
     ws.onmessage = function(a) {
-      let event = JSON.parse(a.data).t;
-      if (event === 'MESSAGE_CREATE') {
-        console.log(JSON.parse(a.data).d);
-      }
+      events.fire(a);
       try {
         var b = JSON.parse(a.data);
         if (0 === b.op) return;
@@ -39,7 +39,7 @@ class WebSocket {
             }))
           }, b.d.heartbeat_interval))
       } catch(e) {
-        reject(e);
+        reject(new Error(e));
       }
     }
   }
