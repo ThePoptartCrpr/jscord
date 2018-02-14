@@ -5,6 +5,7 @@ sitegen/
 testing/
 testing-sensitive/
 docs/
+docfiles/
 discordjs-old
 
 # Unwanted files
