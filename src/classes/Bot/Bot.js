@@ -7,6 +7,10 @@ const WebSocket = new websocket();
 class Bot {
   /**
    * @param {string} token Your bot account's token
+   * @example
+   * const jscord = require('jscord');
+   * const mybot = new jscord.Bot('token');
+   * mybot.connect();
    */
   constructor(token) {
     this.token = token;
@@ -19,7 +23,7 @@ class Bot {
   connect() {
     return new Promise((resolve, reject) => {
       if (typeof this.token != "string") throw "Invalid token";
-      WebSocket.connect(this.token);
+      WebSocket.connect(this.token, resolve, reject);
     }).catch(e => {
       return Promise.reject(e);
     })
