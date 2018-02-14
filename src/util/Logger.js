@@ -9,6 +9,9 @@ class Logger {
    * Logs a message to console with a timestamp.
    * @param  {string} obj The message you're logging to console
    * @return {void}     
+   * @example
+   * const Logger = new jscord.Logger();
+   * Logger.log("message");
    */
   log(obj) {
     console.log(`[${moment().format('MM-DD-YYYY HH:mm:ss')}] ${obj}`);
@@ -18,6 +21,9 @@ class Logger {
    * Logs an error to console with a timestamp.
    * @param  {string} obj The error you're logging to console
    * @return {void}     
+   * @example
+   * const Logger = new jscord.Logger();
+   * Logger.log(error);
    */
   error(obj) {
     console.log(chalk.bgRed(`[ERROR ${moment().format('MM-DD-YYYY HH:mm:ss')}]`) + ` ${obj}`);

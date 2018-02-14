@@ -11,8 +11,14 @@
 </div>
 
 # jscord
-A versatile, straightforward [node.js](https://nodejs.org) library for Discord.
+jscord is a versatile, straightforward [node.js](https://nodejs.org) library for Discord.
 
 ## Links
 * [Documentation](https://jscord.js.org/)
 * [GitHub](https://github.com/ThePoptartCrpr/jscord)
+
+## Installation
+Like any npm package, you need to have [node.js](https://nodejs.org) installed.
+
+Then, from the command line in your project's directory, run the following: `npm install jscord`
+You're all set! Make sure to read the documentation above if you're ever confused.

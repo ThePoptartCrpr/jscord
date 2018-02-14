@@ -4,5 +4,7 @@
 jscord is a versatile, straightforward [node.js](https://nodejs.org) library for Discord.
 
 ## Installation
-**jscord is a work in progress, and is not currently available for installation. Please check back later!**
-Our documentation is still up and running here in case you're interested, though.
+Like any npm package, you need to have [node.js](https://nodejs.org) installed.
+
+Then, from the command line in your project's directory, run the following: `npm install jscord`
+You're all set! Make sure to read the documentation if you're ever confused.
