@@ -5,6 +5,8 @@
   </p>
   <p>
     <a href="https://travis-ci.org/ThePoptartCrpr/jscord"><img src="https://travis-ci.org/ThePoptartCrpr/jscord.svg" alt="Build status" /></a>
+    <a href="https://www.npmjs.com/package/jscord"><img src="https://img.shields.io/npm/v/jscord.svg?maxAge=3600" alt="NPM version" /></a>
+    <a href="https://www.npmjs.com/package/jscord"><img src="https://img.shields.io/npm/dt/jscord.svg?maxAge=3600" alt="NPM downloads" /></a>
   </p>
 </div>
 
