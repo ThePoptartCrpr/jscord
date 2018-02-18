@@ -18,7 +18,15 @@ jscord is a versatile, straightforward [node.js](https://nodejs.org) library for
 * [GitHub](https://github.com/ThePoptartCrpr/jscord)
 
 ## Installation
-Like any npm package, you need to have [node.js](https://nodejs.org) installed.
+Like any npm package, you first need to have [node.js](https://nodejs.org) installed.
 
 Then, from the command line in your project's directory, run the following: `npm install jscord`
-You're all set! Make sure to read the documentation above if you're ever confused.
+You're all set! Make sure to read through the documentation above if you're ever confused.
+
+## Usage
+Check the [documentation](https://jscord.js.org/) for questions or examples. If you're not finding what you're looking for, feel free to ask any questions in our Discord server, linked above.
+
+## Contribution
+If you'd like to contribute anything, pull requests are welcome. **Make sure you fork off of the master branch!** We will not merge any pull requests to stable branches.
+
+If you have an idea, feel free to open an issue describing the addition in detail.
