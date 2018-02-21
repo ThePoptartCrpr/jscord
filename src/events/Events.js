@@ -1,4 +1,5 @@
 const Message = require('../structures/message/Message.js');
+const { EventCodes } = require('../util/constants/Codes.js');
 
 class Events {
   constructor(bot) {
@@ -8,12 +9,12 @@ class Events {
   fire(evt) {
     let event = JSON.parse(evt.data).t;
     if (event === 'READY') {
-      this.bot.emit('ready');
+      this.bot.emit(EventCodes.READY);
     }
     else if (event === 'MESSAGE_CREATE') {
       let data = JSON.parse(evt.data).d;
       let message = new Message(data);
-      this.bot.emit('message', message)
+      this.bot.emit(EventCodes.MESSAGE_CREATE, message);
     }
   }
 }

@@ -22,7 +22,7 @@ class Bot extends EventEmitter {
    */
   connect() {
     return new Promise((resolve, reject) => {
-      if (typeof this.token != "string") throw "Invalid token";
+      if (typeof this.token != "string") reject(new Error("Invalid token"));
       WebSocket.connect(this.token, resolve, reject);
     }).catch(e => {
       return Promise.reject(e);
