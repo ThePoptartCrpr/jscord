@@ -1,4 +1,6 @@
 const websocket = require('../api/websocket/WebSocket.js');
+const logger = require('../util/Logger.js');
+const Logger = new logger();
 
 const EventEmitter = require('events');
 let WebSocket;
@@ -27,6 +29,30 @@ class Bot extends EventEmitter {
     }).catch(e => {
       return Promise.reject(e);
     })
+  }
+  
+  /**
+   * Logs a message to console with a timestamp. An alias for Logger#log() if you don't want to create a {@link Logger} object.
+   * @param  {string} obj The message you're logging to console
+   * @return {void}     
+   * @example
+   * const mybot = new jscord.Bot(token);
+   * mybot.log("message");
+   */
+  log(obj) {
+    return Logger.log(obj);
+  }
+  
+  /**
+   * Logs an error to console with a timestamp. An alias for Logger#error() if you don't want to create a {@link Logger} object.
+   * @param  {string} obj The error you're logging to console
+   * @return {void}     
+   * @example
+   * const mybot = new jscord.Bot(token);
+   * mybot.log(error);
+   */
+  error(obj) {
+    return Logger.error(obj);
   }
   
 }

@@ -23,7 +23,7 @@ class Logger {
    * @return {void}     
    * @example
    * const Logger = new jscord.Logger();
-   * Logger.log(error);
+   * Logger.error(error);
    */
   error(obj) {
     console.log(chalk.bgRed(`[ERROR ${moment().format('MM-DD-YYYY HH:mm:ss')}]`) + ` ${obj}`);
