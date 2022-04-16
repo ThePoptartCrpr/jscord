@@ -10,8 +10,10 @@
   </p>
 </div>
 
-# jscord
-jscord is a versatile, straightforward [node.js](https://nodejs.org) library for Discord.
+# This project has been discontinued for a long time, and is not feature-complete.
+
+## jscord
+jscord ~~is~~ was a versatile, straightforward [node.js](https://nodejs.org) library for Discord.
 
 ## Links
 * [Documentation](https://jscord.js.org/)
